@@ -1,0 +1,51 @@
+Backend TODOs
+
+
+Endpoint at /comms/your-next-delivery/<USER-ID>
+        can check data.json for reference
+This is a lookup based on USER-ID
+Its a GET request
+
+returns JSON payload from readme
+    Returns message with specific body
+
+NOTE - logic is handled here
+
+Price calculation based on ACTIVE subscriptions
+    be wary of that - there can be inactive cats contained
+    price calc chart from readme
+    A -> 55.50 GBP
+    B -> 59.50 GBP
+    C -> 62.75 GBP
+    D -> 66.00 GBP
+    E -> 69.00 GBP
+    F -> 71.25 GBP
+
+
+THOUGHTS
+I enjoyed using NestJS to create an API - this plus typescript is really cool
+
+This backend is where I spent the majority of my time - around 60 minutes
+    This is due to me not having much experience with NestJS prior to this.
+    Most of my time was getting this working and passing properly, so there wasnt much time for
+    doing logic improvements
+
+With more time, i would clean up my comms.service.ts file logic more
+    I would put the total price calculator in a designatied function.
+    I would find a more optimal way to fetch data from data.json, I don't love importing
+    the entire data.json object in.
+    .Find currently assumes we are hitting a valid ID - if you call an invalid ID, it's
+    just showing a lot of strings with gaps where values should be. This would be my first
+    priority with more time is better API input checking.
+    I would add tests, given the time constraints I was not able to. This would be my second
+    priority if given more time.
+    I would need to do some better examining of the logic if this were to be used for a larger data
+    set or if this was meant to be a "production-quality" API - I just focused on implementing
+    this successfully, and would do another pass and some rewrites to really make it shine.
+
+This portion felt also in line with the time commitment and expectations - with more NestJS experience
+I would have been able to make a better "production level" API, but overall was enjoyable and straightforward.
+
+
+
+
