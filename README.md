@@ -1,4 +1,4 @@
-# KatKin's Full-stack Coding Test
+## EDITED TO REMOVE IDENTIFYING INFO
 
 ## BEFORE YOU BEGIN
 
